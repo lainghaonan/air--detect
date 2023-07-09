@@ -1,3 +1,5 @@
+//回复touch命令（TCP）
+
 #include "service_task.h"
 #include <unistd.h>
 #include <stdio.h>

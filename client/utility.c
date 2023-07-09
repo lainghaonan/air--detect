@@ -92,11 +92,12 @@ int DivideByChar(const char* line, char c, char** argv, int row, int col)
     return ret;
 }
 
+
 int CharCount(const char* s, char c)
 {
     int ret = 0;
     
-    while( s && *s )
+    while( s && *s )    //s不为空且不到末尾
     {
         ret += (*s++ == c);
     }

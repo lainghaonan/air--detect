@@ -51,6 +51,9 @@ static void Init_SHT30(void)
     IoTI2cWrite(1, (SHT30_Addr << 1)|0x00, send_data, 2);
 }
 
+
+
+
 void Service_Init(void)
 {
     IoTGpioInit(14);
@@ -85,8 +88,9 @@ const char* Service_GetUsage(void)
            "Temperature: Tem_Get\n"
            "Humidity: Hum_Get\n"
            "Light: Lig_Get Lig_Set_On Lig_Set_Off\n";
-           //c语言中，当多个字符串字面量连续写在一起时，它们会在编译时自动连接在一起形成一个长字符串
 }
+//c语言中，当多个字符串字面量连续写在一起时，它们会在编译时自动连接在一起形成一个长字符串
+
 
 SvrData Service_GetData(void)
 {
@@ -120,6 +124,7 @@ SvrData Service_GetData(void)
 
     return ret;
 }
+
 
 int Service_SetLight(int on)
 {
