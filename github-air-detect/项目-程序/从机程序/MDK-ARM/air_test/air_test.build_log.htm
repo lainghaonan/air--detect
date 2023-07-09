@@ -1,0 +1,165 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.20.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 123 456, 789, LIC=4ZLZX-HNEVH-HRPXN-YSMSQ-YMS3D-LJ9K8
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.12.0.0
+Toolchain Path:  D:\ruanjian\keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 (build 41)
+Assembler:       Armasm.exe V5.05 (build 41)
+Linker/Locator:  ArmLink.exe V5.05 (build 41)
+Library Manager: ArmAr.exe V5.05 (build 41)
+Hex Converter:   FromElf.exe V5.05 (build 41)
+CPU DLL:         SARMCM3.DLL V5.12.0.0
+Dialog DLL:      DCM.DLL V1.13.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.2.0
+Dialog DLL:      TCM.DLL V1.14.2.0
+ 
+<h2>Project:</h2>
+C:\Users\86178\Desktop\空气质量检测项目文件\项目-程序设计\第一版程序（内蒙古）\从机程序\MDK-ARM\air_test.uvprojx
+Project File Date:  10/11/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 (build 41)', folder: 'D:\ruanjian\keil\ARM\ARMCC\Bin'
+Build target 'air_test'
+compiling stm32f1xx_it.c...
+compiling main.c...
+..\HARDWARE\MODBUS\modbus.h(45): warning:  #1295-D: Deprecated declaration Sensor_Event - give arg types
+  extern void Sensor_Event() ;
+../Src/main.c(180): warning:  #177-D: function "MX_ADC1_Init" was declared but never referenced
+  static void MX_ADC1_Init(void)
+../Src/main.c: 2 warnings, 0 errors
+compiling stm32f1xx_hal_msp.c...
+assembling startup_stm32f103xb.s...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_hal_adc_ex.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_iwdg.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_uart.c...
+compiling stm32f1xx_hal_adc.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm_flash.c...
+..\HARDWARE\MODBUS\modbus.h(45): warning:  #1295-D: Deprecated declaration Sensor_Event - give arg types
+  extern void Sensor_Event() ;
+..\HARDWARE\FLASH\stm_flash.c: 1 warning, 0 errors
+compiling interrupt.c...
+..\HARDWARE\MODBUS\modbus.h(45): warning:  #1295-D: Deprecated declaration Sensor_Event - give arg types
+  extern void Sensor_Event() ;
+..\HARDWARE\interrupt\interrupt.c(30): warning:  #177-D: variable "st" was declared but never referenced
+  	u8 st;
+..\HARDWARE\interrupt\interrupt.c(31): warning:  #177-D: variable "cnt" was declared but never referenced
+  	static u16 cnt=0,cnt2=0,cnt3=0;
+..\HARDWARE\interrupt\interrupt.c(31): warning:  #177-D: variable "cnt2" was declared but never referenced
+  	static u16 cnt=0,cnt2=0,cnt3=0;
+..\HARDWARE\interrupt\interrupt.c(31): warning:  #177-D: variable "cnt3" was declared but never referenced
+  	static u16 cnt=0,cnt2=0,cnt3=0;
+..\HARDWARE\interrupt\interrupt.c(77): warning:  #177-D: variable "ii" was declared but never referenced
+  	static u8 ii=0;
+..\HARDWARE\interrupt\interrupt.c(113): warning:  #940-D: missing return statement at end of non-void function "fput"
+  }
+..\HARDWARE\interrupt\interrupt.c(111): warning:  #177-D: variable "temp" was declared but never referenced
+  	u8 temp[1] = {ch};
+..\HARDWARE\interrupt\interrupt.c: 8 warnings, 0 errors
+compiling modbus.c...
+..\HARDWARE\MODBUS\modbus.h(45): warning:  #1295-D: Deprecated declaration Sensor_Event - give arg types
+  extern void Sensor_Event() ;
+..\HARDWARE\MODBUS\modbus.c(74): warning:  #223-D: function "crc16" declared implicitly
+  	crc=crc16(modbus.Sendbuf,i);
+..\HARDWARE\MODBUS\modbus.c(43): warning:  #177-D: variable "Regadd" was declared but never referenced
+      u16 Regadd;
+..\HARDWARE\MODBUS\modbus.c(44): warning:  #177-D: variable "Reglen" was declared but never referenced
+  	u16 Reglen;
+..\HARDWARE\MODBUS\modbus.c(45): warning:  #177-D: variable "byte" was declared but never referenced
+  	u16 byte;
+..\HARDWARE\MODBUS\modbus.c(89): warning:  #550-D: variable "Regadd" was set but never used
+      u16 Regadd;
+..\HARDWARE\MODBUS\modbus.c(90): warning:  #550-D: variable "val" was set but never used
+  	u16 val;
+..\HARDWARE\MODBUS\modbus.c(91): warning:  #550-D: variable "i" was set but never used
+  	u16 i,crc,j;
+..\HARDWARE\MODBUS\modbus.c(91): warning:  #177-D: variable "crc" was declared but never referenced
+  	u16 i,crc,j;
+..\HARDWARE\MODBUS\modbus.c(91): warning:  #177-D: variable "j" was declared but never referenced
+  	u16 i,crc,j;
+..\HARDWARE\MODBUS\modbus.c(148): warning:  #223-D: function "crc16" declared implicitly
+  	  crc= crc16(&modbus.rcbuf[0], modbus.recount-2);       //计算校验码
+..\HARDWARE\MODBUS\modbus.c(143): warning:  #177-D: variable "mm" was declared but never referenced
+  	static u16 mm=0;
+..\HARDWARE\MODBUS\modbus.c(185): warning:  #223-D: function "crc16" declared implicitly
+  	 crc= crc16(&modbus1.rcbuf[0], modbus1.recount-2);       //计算校验码
+..\HARDWARE\MODBUS\modbus.c(180): warning:  #177-D: variable "mm" was declared but never referenced
+  	static u16 mm=0;
+..\HARDWARE\MODBUS\modbus.c: 14 warnings, 0 errors
+compiling SHT30.c...
+..\HARDWARE\MODBUS\modbus.h(45): warning:  #1295-D: Deprecated declaration Sensor_Event - give arg types
+  extern void Sensor_Event() ;
+..\HARDWARE\SHT30X\SHT30\SHT30.c: 1 warning, 0 errors
+compiling bsp_i2c_gpio.c...
+..\HARDWARE\MODBUS\modbus.h(45): warning:  #1295-D: Deprecated declaration Sensor_Event - give arg types
+  extern void Sensor_Event() ;
+..\HARDWARE\SHT30X\i2c\bsp_i2c_gpio.c: 1 warning, 0 errors
+compiling iic.c...
+..\HARDWARE\MODBUS\modbus.h(45): warning:  #1295-D: Deprecated declaration Sensor_Event - give arg types
+  extern void Sensor_Event() ;
+..\HARDWARE\SGP30\iic.c: 1 warning, 0 errors
+compiling SGP30.c...
+..\HARDWARE\MODBUS\modbus.h(45): warning:  #1295-D: Deprecated declaration Sensor_Event - give arg types
+  extern void Sensor_Event() ;
+..\HARDWARE\SGP30\SGP30.c: 1 warning, 0 errors
+compiling ModbusCRC.c...
+..\HARDWARE\MODBUS\modbus.h(45): warning:  #1295-D: Deprecated declaration Sensor_Event - give arg types
+  extern void Sensor_Event() ;
+..\HARDWARE\MODBUS_CRC\ModbusCRC.c: 1 warning, 0 errors
+compiling dht11.c...
+..\HARDWARE\MODBUS\modbus.h(45): warning:  #1295-D: Deprecated declaration Sensor_Event - give arg types
+  extern void Sensor_Event() ;
+..\HARDWARE\DHT11\dht11.c: 1 warning, 0 errors
+compiling delay.c...
+..\HARDWARE\MODBUS\modbus.h(45): warning:  #1295-D: Deprecated declaration Sensor_Event - give arg types
+  extern void Sensor_Event() ;
+..\SYSTEM\delay\delay.c: 1 warning, 0 errors
+compiling sys.c...
+..\HARDWARE\MODBUS\modbus.h(45): warning:  #1295-D: Deprecated declaration Sensor_Event - give arg types
+  extern void Sensor_Event() ;
+..\SYSTEM\sys\sys.c: 1 warning, 0 errors
+linking...
+Program Size: Code=9720 RO-data=804 RW-data=12 ZI-data=1780  
+FromELF: creating hex file...
+"air_test\air_test.axf" - 0 Error(s), 33 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\86178\Desktop\空气质量检测项目文件\项目-程序设计\第一版程序（内蒙古）\从机程序\MDK-ARM\RTE
+  D:\ruanjian\keil\ARM\CMSIS\4.2.0\CMSIS\Include
+  D:\ruanjian\keil\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+Build Time Elapsed:  00:00:43
+</pre>
+</body>
+</html>

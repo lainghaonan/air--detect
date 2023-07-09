@@ -1,0 +1,17 @@
+[INIT]
+PICFIX=1
+VARCount=64
+SCREENDSIZE=1024X768
+SPADDRESS=5000
+[IMG]
+00=00开始界面.bmp
+01=01空气检测主界面.bmp
+02=02风机控制改.bmp
+03=03控制面板改.bmp
+04=04排风点.bmp
+05=05时间设置.bmp
+06=06数据键盘.bmp
+07=07授权注册.bmp
+08=08注册成功.bmp
+09=09注册失败.bmp
+10=10温度补偿.bmp
