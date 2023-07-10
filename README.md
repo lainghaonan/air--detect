@@ -6,6 +6,9 @@
 协调器采用lwip协议与客户端（PC）连接，客户端通过UDP广播查询同一网络下可用设备，与协调器建立UDP连接后，获取设备的可用服务信息；
 再以TCP协议的方式使用服务，如获取传感器信息、操作设备等；客户端与服务端以字符串的方式交互，命令与参数使用空格分割。
 系统框架如下：
+
 ![image](https://github.com/lainghaonan/air--detect/blob/master/img/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230710130810.png)
-协调器（服务端）与PC（客户端）通信框架如下
+
+协调器（服务端）与PC（客户端）通信框架如下：
+
 ![image](https://github.com/lainghaonan/air--detect/blob/master/img/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230710160848.png)
