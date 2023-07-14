@@ -4,7 +4,7 @@
 系统采用模块化设计，采集器利用无线串口模块实现组网，通过传感器获取到数据后上传到协调器，协调器将节点的数据汇集后使用串口屏进行显示和交互，客户端（PC）以网络通信方式获取设备信息。  
 **系统框架如下**：
 
-![image](https://github.com/lainghaonan/air--detect/blob/master/img/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230714221456.png)
+![image](https://github.com/lainghaonan/air--detect/blob/master/img/%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6.png)
 
 ## 采集器与协调器
 这两部分是stm32实现的，硬件比较简单没有上传，只上传了  /github-air-detect/项目-项目调试说明书/项目-BOM表，  
@@ -20,5 +20,5 @@
   
 协调器（服务端）与PC（客户端）通信框架如下：
 
-![image](https://github.com/lainghaonan/air--detect/blob/master/img/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230710160848.png)
+![image](https://github.com/lainghaonan/air--detect/blob/master/img/%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1%E6%A1%86%E6%9E%B6.png)
 
